@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         CalculateMovement();
+
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Q))
+        {
+            SwitchLanes();
+        }
     }
 
 
@@ -48,5 +53,20 @@ public class Player : MonoBehaviour
             transform.position = new Vector3(-8.18f, transform.position.y, 0);
         }
 
+    }
+
+    void SwitchLanes() 
+    {
+        //if e is pressed, switch lanes right
+        //if q is pressed, switch lanes left
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            transform.position = new Vector3(transform.position.x + 7, transform.position.y, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.Q)) 
+        {
+            transform.position = new Vector3(transform.position.x - 7, transform.position.y, 0);
+        }
     }
 }
