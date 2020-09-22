@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _kidPrefab: {fileID: 3160005269535690662, guid: 666f741bebbc7b6439a94071d69f0dad, type: 3}
+  _girlPrefab: {fileID: 8137436812653329563, guid: 1783cdaea68d25448893fd3cf4d539bb, type: 3}
 --- !u!4 &848306624
 Transform:
   m_ObjectHideFlags: 0
